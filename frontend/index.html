@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to House Price Prediction</h2>
+        <p>Enter the size and number of bedrooms of the house below to get an estimated price.</p>
+
+        <div class="input-group">
+            <label for="size">Size (sqft):</label>
+            <input id="size" type="number">
+        </div>
+
+        <div class="input-group">
+            <label for="bedrooms">Bedrooms:</label>
+            <input id="bedrooms" type="number">
+        </div>
+
+        <button onclick="Predict()">Predict</button>
+        
+        <div id="predicted_price"></div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+</html>
