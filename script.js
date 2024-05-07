@@ -10,7 +10,7 @@ function Predict() {
         "bedrooms":bedrooms
     };
 
-    fetch('http://localhost:5000/predict',{
+    fetch('http://65.0.61.158/predict',{
         method:'POST',
         headers:{
             'Content-Type':'application/json',
