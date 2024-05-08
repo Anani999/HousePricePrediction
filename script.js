@@ -19,6 +19,8 @@ function Predict() {
     })
     .then(response => response.json())
     .then(data => {
-        show.innerText = 'Predicted price $' + data.predicted_price;
+	number = data.predicted_price;
+	modified_number = Math.floor(number).toLocaleString();
+        show.innerText = 'Predicted price $' + modified_number;
     })
 }
